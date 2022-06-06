@@ -1,0 +1,430 @@
+{
+  "nbformat": 4,
+  "nbformat_minor": 0,
+  "metadata": {
+    "colab": {
+      "name": "Untitled3.ipynb",
+      "provenance": [],
+      "collapsed_sections": [],
+      "authorship_tag": "ABX9TyM3U+MCsFUfaO5Q6xrrlWdv",
+      "include_colab_link": true
+    },
+    "kernelspec": {
+      "name": "python3",
+      "display_name": "Python 3"
+    },
+    "language_info": {
+      "name": "python"
+    }
+  },
+  "cells": [
+    {
+      "cell_type": "markdown",
+      "metadata": {
+        "id": "view-in-github",
+        "colab_type": "text"
+      },
+      "source": [
+        "<a href=\"https://colab.research.google.com/github/GabyRoa/4-A-o/blob/main/TP3\" target=\"_parent\"><img src=\"https://colab.research.google.com/assets/colab-badge.svg\" alt=\"Open In Colab\"/></a>"
+      ]
+    },
+    {
+      "cell_type": "code",
+      "source": [
+        ""
+      ],
+      "metadata": {
+        "id": "A4HCSz0hV8oy"
+      },
+      "execution_count": null,
+      "outputs": []
+    },
+    {
+      "cell_type": "markdown",
+      "source": [
+        "\n",
+        "#Ejercicio 1#\n",
+        " \n",
+        "Haz que un usuario introduzca un número real y evalúa si dicho número es positivo, negativo o cero. Devuelve\n",
+        "por pantalla el resultado en cada caso"
+      ],
+      "metadata": {
+        "id": "5pfL33k3V_6o"
+      }
+    },
+    {
+      "cell_type": "code",
+      "source": [
+        "nro = float(input(\"Introduzca un numero = \"))\n",
+        "if nro  >= 0:\n",
+        "  print(\"su numero es positivo\")\n",
+        "\n",
+        "else:\n",
+        "  print(\"su numero es negativo\")"
+      ],
+      "metadata": {
+        "id": "FXqZ0GZoWte4",
+        "colab": {
+          "base_uri": "https://localhost:8080/"
+        },
+        "outputId": "036ec96b-4b05-42b8-b467-779d0f5248ca"
+      },
+      "execution_count": 11,
+      "outputs": [
+        {
+          "output_type": "stream",
+          "name": "stdout",
+          "text": [
+            "Introduzca un numero = 6\n",
+            "su numero es positivo\n"
+          ]
+        }
+      ]
+    },
+    {
+      "cell_type": "markdown",
+      "source": [
+        "#Ejercicio 2#\n",
+        "\n",
+        "Haz que un usuario introduzca su nombre y evalúa con operadores if y else si dicho nombre tiene una\n",
+        "longitud mayor a 10 caracteres o no. Devuelve por pantalla el resultado en cada caso."
+      ],
+      "metadata": {
+        "id": "p-r7Mb-qYrdt"
+      }
+    },
+    {
+      "cell_type": "code",
+      "source": [
+        "name = input(\"introduzca su nombre = \")\n",
+        "if len(name) >= 10:\n",
+        " print(\"tu nombre tiene mas de diez caracteres\")\n",
+        "\n",
+        "else:\n",
+        " print(\"tu nombre tiene menos de diez caracteres\")\n"
+      ],
+      "metadata": {
+        "id": "LI3JEayHZH6s",
+        "colab": {
+          "base_uri": "https://localhost:8080/"
+        },
+        "outputId": "434e2c40-6412-4748-a24c-9e02fdc810bd"
+      },
+      "execution_count": 20,
+      "outputs": [
+        {
+          "output_type": "stream",
+          "name": "stdout",
+          "text": [
+            "introduzca su nombre = gabi\n",
+            "tu nombre tiene menos de diez caracteres\n"
+          ]
+        }
+      ]
+    },
+    {
+      "cell_type": "markdown",
+      "source": [
+        "#Ejercicio 3#\n",
+        "Realiza el ejercicio anterior con el uso del operador ternario."
+      ],
+      "metadata": {
+        "id": "YvfajVWlZI7Q"
+      }
+    },
+    {
+      "cell_type": "code",
+      "source": [
+        "\n",
+        "name = input(\"introduzca su nombre = \")\n",
+        "\n",
+        "texto_mayor = \"tu nombre tiene mas de doce caracteres\"\n",
+        "texto_menor = \"tu nombre tiene menos de doce caracteres\"\n",
+        "\n",
+        "print(texto_mayor) if len(name) >=10 else print(texto_menor)"
+      ],
+      "metadata": {
+        "id": "0DI1B6w9ZNQ2",
+        "colab": {
+          "base_uri": "https://localhost:8080/"
+        },
+        "outputId": "bc6d9cdf-90aa-45e2-ddb4-6bfdb0756514"
+      },
+      "execution_count": 22,
+      "outputs": [
+        {
+          "output_type": "stream",
+          "name": "stdout",
+          "text": [
+            "introduzca su nombre = Gabriel\n",
+            "tu nombre tiene menos de doce caracteres\n"
+          ]
+        }
+      ]
+    },
+    {
+      "cell_type": "markdown",
+      "source": [
+        "#Ejercicio 4#\n",
+        "\n",
+        "Haz que un usuario introduzca dos números enteros positivos. Comprueba si el primer número introducido\n",
+        "por el usuario es mayor o igual que el segundo número introducido por el usuario. Devuelve por pantalla el\n",
+        "resultado en cada caso.\n",
+        "PISTA: Asegúrate de hacer uso de la función int() donde pertoque."
+      ],
+      "metadata": {
+        "id": "Wj0qLlwIZOLL"
+      }
+    },
+    {
+      "cell_type": "code",
+      "source": [
+        "A = int(input(\"introduzca un numero positivo = \"))\n",
+        "B = int(input(\"introduzca otro numero positivo = \"))\n",
+        "\n",
+        "if A >= B:\n",
+        "  print(\"este numero es mayor que el segundo introducido\")\n",
+        "else:\n",
+        "  print(\"este numero es menor que el segundo introducido\")"
+      ],
+      "metadata": {
+        "id": "iBy7W_PEZWW3",
+        "colab": {
+          "base_uri": "https://localhost:8080/"
+        },
+        "outputId": "af89c70e-6b58-4e10-9639-f77c26f65408"
+      },
+      "execution_count": 12,
+      "outputs": [
+        {
+          "output_type": "stream",
+          "name": "stdout",
+          "text": [
+            "introduzca un numero positivo = 6\n",
+            "introduzca otro numero positivo = 5\n",
+            "este numero es mayor que el segundo introducido\n"
+          ]
+        }
+      ]
+    },
+    {
+      "cell_type": "markdown",
+      "source": [
+        "#Ejercicio 5#\n",
+        "\n",
+        "Haz que un usuario introduzca dos números enteros positivos. Suponiendo que el primer número introducido\n",
+        "por el usuario es mayor o igual al segundo número introducido por el usuario, comprueba que la división del\n",
+        "primer número entre el segundo número es exacta.\n",
+        "En caso de la división ser exacta, devuelve el cociente por pantalla e indica que la división en efecto es exacta.\n",
+        "En caso de la división no ser exacta, devuelve el cociente y el resto por pantalla e indica que la división entre\n",
+        "los dos números no es exacta"
+      ],
+      "metadata": {
+        "id": "w5fGw7CuZW98"
+      }
+    },
+    {
+      "cell_type": "code",
+      "source": [
+        ""
+      ],
+      "metadata": {
+        "id": "BND1flmbZerW"
+      },
+      "execution_count": null,
+      "outputs": []
+    },
+    {
+      "cell_type": "markdown",
+      "source": [
+        "#Ejercicio 6#\n",
+        "\n",
+        "Fusiona lo hecho en los ejercicios 4 y 5 para que\n",
+        "1. Un usuario introduzca dos números enteros por pantalla.\n",
+        "2. Comprobar si el primer número es mayor o igual al segundo número introducido por el usuario. Devolver\n",
+        "por pantalla en que caso nos encontramos.\n",
+        "3. Hacer la división entera pertinente en cada caso.\n",
+        "4. Si la división es exacta, entonces devolver por pantalla el cociente e indicar que la división es exacta.\n",
+        "Si la división no es exacta, entonces devolver por pantalla el cociente y el resto e indicar que la división\n",
+        "realizada no es exacta"
+      ],
+      "metadata": {
+        "id": "EA3-B3oFZfUs"
+      }
+    },
+    {
+      "cell_type": "code",
+      "source": [
+        ""
+      ],
+      "metadata": {
+        "id": "0d_B0pVBZlRn"
+      },
+      "execution_count": null,
+      "outputs": []
+    },
+    {
+      "cell_type": "markdown",
+      "source": [
+        "#Ejercicio 7#\n",
+        "\n",
+        "Haz que un usuario introduzca dos números enteros positivos. Comprueba si el mayor es múltiplo del menor.\n",
+        "Devuelve por pantalla el resultado en cada caso"
+      ],
+      "metadata": {
+        "id": "hISdNVyAZn0P"
+      }
+    },
+    {
+      "cell_type": "code",
+      "source": [
+        "a = int(input(\"introducir numero postituvo\"))\n",
+        "b = int(input(\"introducir otr numero positivo\"))\n",
+        "\n",
+        "if a%b:\n",
+        "  print(\"tu numero introducido es multiplo del menor\")\n",
+        "\n",
+        "else:\n",
+        "  print(\"tu numero introducido no es multiplo\")"
+      ],
+      "metadata": {
+        "id": "Rn1_KjDXZrSH",
+        "colab": {
+          "base_uri": "https://localhost:8080/"
+        },
+        "outputId": "e3cbc29e-b555-472e-d8c9-5f1d4d55d610"
+      },
+      "execution_count": 21,
+      "outputs": [
+        {
+          "output_type": "stream",
+          "name": "stdout",
+          "text": [
+            "introducir numero postituvo6\n",
+            "introducir otr numero positivo3\n",
+            "tu numero introducido no es multiplo\n"
+          ]
+        }
+      ]
+    },
+    {
+      "cell_type": "markdown",
+      "source": [
+        ""
+      ],
+      "metadata": {
+        "id": "6sSP0aiCZr3T"
+      }
+    },
+    {
+      "cell_type": "markdown",
+      "source": [
+        "#Ejercicio 8#\n",
+        "\n",
+        "Haz que un usuario introduzca una palabra y comprueba si dicha palabra empieza por mayúscula. Devuelve\n",
+        "por pantalla el resultado en cada caso."
+      ],
+      "metadata": {
+        "id": "jPElpI95ZuA1"
+      }
+    },
+    {
+      "cell_type": "code",
+      "source": [
+        "palabra = input(\"introduce una palabra\")\n",
+        "\n",
+        "if palabra.istitle():\n",
+        " print(\"tu palabra empieza por mayuscula\")\n",
+        "\n",
+        "else:\n",
+        "  print(\"tu palabra empieza por minuscula\")"
+      ],
+      "metadata": {
+        "id": "mvh9Hje6ZxRv",
+        "colab": {
+          "base_uri": "https://localhost:8080/"
+        },
+        "outputId": "62b70b80-4a4f-461f-81c6-cb47acadcd76"
+      },
+      "execution_count": 24,
+      "outputs": [
+        {
+          "output_type": "stream",
+          "name": "stdout",
+          "text": [
+            "introduce una palabraPlato\n",
+            "tu palabra empieza por mayuscula\n"
+          ]
+        }
+      ]
+    },
+    {
+      "cell_type": "markdown",
+      "source": [
+        "#Ejercicio 9#\n",
+        "\n",
+        "Haz un usuario introduza una letra y comprueba si se trata de una vocal. Si el usuario introduce un string\n",
+        "de más de un carácter, infórmale de que no se puede procesar el dato, pues debe tener como máximo tamaño\n",
+        "1.\n",
+        "PISTA: Convierte la letra introducida a minúsculas para tener que realizar menos comprobaciones"
+      ],
+      "metadata": {
+        "id": "sAZL22ttZ2jf"
+      }
+    },
+    {
+      "cell_type": "code",
+      "source": [
+        ""
+      ],
+      "metadata": {
+        "id": "2dZAU_YgaAZx"
+      },
+      "execution_count": null,
+      "outputs": []
+    },
+    {
+      "cell_type": "markdown",
+      "source": [
+        "#Ejercicio 10#\n",
+        "\n",
+        "Dada una ecuación de segundo grado ax2 + bx + c = 0, sabemos que las soluciones vienen dadas por\n",
+        "x = −b ±√b2 −4ac\n",
+        "2a\n",
+        "siempre y cuando a 6= 0.\n",
+        "El número de soluciones dentro del conjunto de los números reales Rviene dado en función del signo\n",
+        "que tome el discriminante, 4 = b2 −4ac. Si 4 > 0, entonces tendremos dos soluciones diferentes en R(\n",
+        "x = −b+√4\n",
+        "2ay x = −b−√4\n",
+        "2a\n",
+        ")\n",
+        ". Si 4= 0, entonces tendremos dos soluciones que serán iguales (x = −b\n",
+        "2a\n",
+        "). Si\n",
+        "4< 0, entonces no existe solución dentro del conjunto de los números reales para esta ecuación de segundo\n",
+        "grado.\n",
+        "Con toda esta información, haz que el usuario introduzca los valores de los coeficientes a, b, c. Con ello,\n",
+        "1. Comprueba que el coeficiente a es distinto de 0\n",
+        "2. En función del discriminante, calcula cuántas soluciones va a tener la ecuación de segundo grado\n",
+        "ax2 + bx + c = 0.\n",
+        "3. Devuelve por pantalla el resultado en cada caso (tanto el número de soluciones en los números reales\n",
+        "como el valor de éstas).\n",
+        "PISTA: Para calcular la raíz cuadrada, vas a necesitar la función math.sqrt() de la librería math"
+      ],
+      "metadata": {
+        "id": "OwNZd103aC_i"
+      }
+    },
+    {
+      "cell_type": "code",
+      "source": [
+        ""
+      ],
+      "metadata": {
+        "id": "n8HrNddVaJ5p"
+      },
+      "execution_count": null,
+      "outputs": []
+    }
+  ]
+}
